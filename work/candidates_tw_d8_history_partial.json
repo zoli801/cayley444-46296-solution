@@ -1,0 +1,13 @@
+{
+  "baseline": "work/submissions/best_46322.csv",
+  "baseline_score": 46322,
+  "candidate_count": 997,
+  "elapsed_seconds": 78.33368391600379,
+  "max_baseline_length": null,
+  "max_depth": 8,
+  "max_slack": 6,
+  "merged_score_floor": 46318,
+  "min_baseline_length": 46,
+  "potential_gain": 4,
+  "shortened_candidate_count": 9
+}

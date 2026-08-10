@@ -1,0 +1,223 @@
+{
+  "baseline": "work/submissions/baseline_46718.csv",
+  "baseline_score": 46718,
+  "gain": 42,
+  "improved_id_count": 16,
+  "improved_ids": [
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "504",
+      "selected_length": 45,
+      "source": "work/public_outputs/georgstumpf__cube4-beam-search-pure-baseline/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "514",
+      "selected_length": 45,
+      "source": "work/public_outputs/fangweif__minimal-piece-transformer-inference/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 45,
+      "gain": 2,
+      "initial_state_id": "516",
+      "selected_length": 43,
+      "source": "work/public_outputs/kiranmazumdarshaw__cube4-2xt4-fp16-beam-profiles-study/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "530",
+      "selected_length": 45,
+      "source": "work/public_outputs/pavelgolubkov__cayleypy-first-mode-submission-notebook/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "532",
+      "selected_length": 45,
+      "source": "work/public_outputs/saidgutseriev__2xt4-cayleypy-starter-collect-all/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "536",
+      "selected_length": 45,
+      "source": "work/public_outputs/sergeysudarikov__cube4-beam-search-with-publish-off/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "546",
+      "selected_length": 45,
+      "source": "work/public_outputs/nikstoronsky__minimal-checkpoint-only-notebook/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 49,
+      "gain": 6,
+      "initial_state_id": "570",
+      "selected_length": 43,
+      "source": "work/public_outputs/vadimhabirov__single-profile-2xt4-mlp-runner/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 4,
+      "initial_state_id": "608",
+      "selected_length": 43,
+      "source": "work/public_outputs/leehernande__state128-fixed-runner-minimal-demo/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "610",
+      "selected_length": 45,
+      "source": "work/public_outputs/emmanuelakyeampong__checkpoint-only-beam-search-template/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "628",
+      "selected_length": 45,
+      "source": "work/public_outputs/xushihuilis__cube4-piece-transformer-beam-search/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "634",
+      "selected_length": 45,
+      "source": "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "650",
+      "selected_length": 45,
+      "source": "work/public_outputs/georgekaiser__cube4-beam-search-minimal-config/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "656",
+      "selected_length": 45,
+      "source": "work/public_outputs/israelengland__piece-transformer-2xt4-beam-experiment/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "658",
+      "selected_length": 45,
+      "source": "work/public_outputs/raydalio__cayleypy-cube4-quick-beam-starter/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "660",
+      "selected_length": 45,
+      "source": "work/public_outputs/johntuu__cube4-state128-baseline-notebook/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 187,
+    "candidate_rows": 65833,
+    "csv_sources": 249,
+    "filesystem_files": 249,
+    "invalid_rows": 0,
+    "replay_cache_hits": 63693,
+    "rows_seen": 65833,
+    "skipped_csv_sources": 62,
+    "source_errors": [],
+    "unique_replays": 2140,
+    "valid_rows": 65833,
+    "zip_files": 0
+  },
+  "merged_score": 46676,
+  "output": "work/submissions/merged_public.csv",
+  "provenance": "work/submissions/merged_public_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/merged_public_rejections.csv",
+  "source_contributions": {
+    "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/emmanuelakyeampong__checkpoint-only-beam-search-template/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/fangweif__minimal-piece-transformer-inference/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/georgekaiser__cube4-beam-search-minimal-config/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/georgstumpf__cube4-beam-search-pure-baseline/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/israelengland__piece-transformer-2xt4-beam-experiment/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/johntuu__cube4-state128-baseline-notebook/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/kiranmazumdarshaw__cube4-2xt4-fp16-beam-profiles-study/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/leehernande__state128-fixed-runner-minimal-demo/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 4,
+      "improved_ids": 1
+    },
+    "work/public_outputs/nikstoronsky__minimal-checkpoint-only-notebook/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/pavelgolubkov__cayleypy-first-mode-submission-notebook/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/raydalio__cayleypy-cube4-quick-beam-starter/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 4,
+      "improved_ids": 1
+    },
+    "work/public_outputs/saidgutseriev__2xt4-cayleypy-starter-collect-all/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 4,
+      "improved_ids": 1
+    },
+    "work/public_outputs/sergeysudarikov__cube4-beam-search-with-publish-off/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/vadimhabirov__single-profile-2xt4-mlp-runner/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 6,
+      "improved_ids": 1
+    },
+    "work/public_outputs/xushihuilis__cube4-piece-transformer-beam-search/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    }
+  },
+  "unique_valid_paths": 2140,
+  "valid_candidate_rows": 65833
+}

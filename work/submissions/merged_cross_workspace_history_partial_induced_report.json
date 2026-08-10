@@ -1,0 +1,17 @@
+{
+  "baseline": "work/submissions/merged_cross_workspace.csv",
+  "baseline_score": 46330,
+  "candidate_path_count": 1815,
+  "directed_edge_count": 133132,
+  "gain": 6,
+  "improved_id_count": 3,
+  "improved_ids": [
+    "550",
+    "586",
+    "704"
+  ],
+  "induced_edges": true,
+  "node_count": 64569,
+  "output": "work/submissions/merged_cross_workspace_history_partial_induced.csv",
+  "score": 46324
+}

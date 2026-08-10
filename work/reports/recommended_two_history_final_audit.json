@@ -1,0 +1,139 @@
+{
+  "baseline": {
+    "path": "work/submissions/best_46314.csv",
+    "score": 46314,
+    "valid": true
+  },
+  "candidate_extraction": {
+    "errors": 0,
+    "kernel_versions_with_unique_provenance": 262,
+    "raw_candidate_rows": 5500,
+    "source_files": 289,
+    "unique_id_path_pairs": 1304,
+    "unique_path_strings": 1304
+  },
+  "completeness": {
+    "duplicate_versions": 0,
+    "manifest_errors": 0,
+    "missing_versions": 0,
+    "payload_digest_or_size_failures": 0,
+    "version_count": 373
+  },
+  "direct_merge": {
+    "gain": 0,
+    "invalid_candidate_rows": 0,
+    "output": "work/submissions/recommended_two_direct_46314.csv",
+    "replay_valid_candidate_rows_including_baseline": 2347,
+    "score": 46314,
+    "unique_replays_including_baseline": 2287,
+    "valid": true
+  },
+  "extra_output_audit": {
+    "beam_run_results": {
+      "candidate_versions": 0,
+      "header_variants": 1,
+      "missing_versions": 214,
+      "present_versions": 159,
+      "sole_header": [
+        "invocation_index",
+        "puzzle_id",
+        "variant",
+        "return_code",
+        "seconds",
+        "collection_status",
+        "combined_log",
+        "rank0_log",
+        "rank1_log"
+      ]
+    },
+    "run_summary": {
+      "artifact_name_count": 9,
+      "artifact_names": [
+        "beam_run_results.csv",
+        "export/manifest.json",
+        "logs/",
+        "preflight.json",
+        "publish_status.json",
+        "selected_profile.json",
+        "solutions/all_solutions.csv",
+        "solutions/solutions.csv",
+        "submission.csv"
+      ],
+      "missing_versions": 199,
+      "present_versions": 174,
+      "unexpected_candidate_csv_or_json_names": []
+    }
+  },
+  "get_only": true,
+  "history_union_induced_merge": {
+    "candidate_path_count": 2664,
+    "directed_edge_count": 177360,
+    "gain": 0,
+    "node_count": 85054,
+    "output": "work/submissions/recommended_two_plus_history_induced_46314.csv",
+    "score": 46314,
+    "valid": true
+  },
+  "kernels": [
+    {
+      "artifact_counts": {
+        "cayleypy_public/output/solutions/all_solutions.csv": 155,
+        "cayleypy_public/output/solutions/solutions.csv": 74,
+        "cayleypy_public/output/submission.csv": 3
+      },
+      "candidate_rows": 3358,
+      "candidate_versions": 232,
+      "current_version": 277,
+      "no_candidate_versions": 45,
+      "ref": "trydotatwo/cayleypy-2xt4-4x4x4-recommended",
+      "unique_artifact_payloads": 223
+    },
+    {
+      "artifact_counts": {
+        "cayleypy_public/output/solutions/all_solutions.csv": 55,
+        "cayleypy_public/output/submission.csv": 2
+      },
+      "candidate_rows": 2142,
+      "candidate_versions": 57,
+      "current_version": 96,
+      "no_candidate_versions": 39,
+      "ref": "trydotatwo/cayleypy-2xt4-444-example",
+      "unique_artifact_payloads": 42
+    }
+  ],
+  "manifest": "work/recommended_two_history_get_outputs/manifest.json",
+  "mutation_requests": 0,
+  "new_vs_prior_history": {
+    "all_new_paths_from": "trydotatwo/cayleypy-2xt4-4x4x4-recommended",
+    "example_manifest_records_rechecked": 96,
+    "example_manifest_semantic_differences": 0,
+    "new_id_count": 187,
+    "new_id_path_pairs": 202,
+    "new_path_provenance_version_count": 202,
+    "new_path_provenance_version_max": 265,
+    "new_path_provenance_version_min": 3,
+    "new_path_slack_counts": {
+      "0": 159,
+      "2": 39,
+      "4": 2,
+      "10": 2
+    },
+    "overlap_id_path_pairs": 1102,
+    "prior_manifest_omitted_recommended_versions": 277
+  },
+  "read_only_methods": [
+    "GET https://www.kaggle.com/api/v1/kernels/pull",
+    "GET https://www.kaggle.com/api/v1/kernels/output/download/{owner}/{slug}/{artifact}",
+    "GET signed artifact URL"
+  ],
+  "trajectory_induced_merge": {
+    "candidate_path_count": 1299,
+    "directed_edge_count": 100922,
+    "gain": 0,
+    "node_count": 49624,
+    "output": "work/submissions/recommended_two_trajectory_induced_46314.csv",
+    "score": 46314,
+    "valid": true
+  },
+  "uploads_or_submissions": 0
+}

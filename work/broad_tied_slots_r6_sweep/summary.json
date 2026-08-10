@@ -1,0 +1,10 @@
+{
+  "baseline": "work/submissions/best_46316.csv",
+  "completed": 8,
+  "final_score": 46316,
+  "gain": 0,
+  "incumbent": "work/broad_tied_slots_r6_sweep/incumbent.csv",
+  "slot_count": 8,
+  "starting_score": 46316,
+  "valid": true
+}

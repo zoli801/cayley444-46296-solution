@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["./node_modules/@cubing/dev-config/biome/biome.json"],
+  "files": {
+    "includes": ["**", "!.bin", "!.temp", "!dist", "!target"]
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noShoutyConstants": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
+      }
+    }
+  },
+  "json": {
+    "formatter": {
+      "lineWidth": 160
+    }
+  }
+}

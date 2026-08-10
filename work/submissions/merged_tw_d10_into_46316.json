@@ -1,0 +1,43 @@
+{
+  "baseline": "work/submissions/best_46316.csv",
+  "baseline_score": 46316,
+  "gain": 2,
+  "improved_id_count": 1,
+  "improved_ids": [
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "850",
+      "selected_length": 45,
+      "source": "work/candidates_tw_d10_history_full.csv",
+      "source_row": 1036
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 2298,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 535,
+    "rows_seen": 2298,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1763,
+    "valid_rows": 2298,
+    "zip_files": 0
+  },
+  "merged_score": 46314,
+  "output": "work/submissions/merged_tw_d10_into_46316.csv",
+  "provenance": "work/submissions/merged_tw_d10_into_46316_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/merged_public_rejections.csv",
+  "source_contributions": {
+    "work/candidates_tw_d10_history_full.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    }
+  },
+  "unique_valid_paths": 1763,
+  "valid_candidate_rows": 2298
+}

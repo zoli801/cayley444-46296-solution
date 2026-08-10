@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "kernel_refs": 2,
+  "kernel_versions": 262,
+  "manifest": "work/recommended_two_history_get_outputs/manifest.json",
+  "raw_candidate_rows": 5500,
+  "source_files": 289,
+  "unique_id_path_pairs": 1304,
+  "unique_path_strings": 1304
+}

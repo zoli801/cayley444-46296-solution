@@ -1,0 +1,128 @@
+{
+  "final": "outputs/cube4_submission_46296.csv",
+  "score": 46296,
+  "puzzles": 1043,
+  "valid": true,
+  "final_sha256": "8a10867da63d388de0b0131be38badddd9b4c0fa7edfe0906f188a6b9cbd21f7",
+  "starting_score": 46378,
+  "total_gain": 82,
+  "replaced_ids": 39,
+  "rows_retained_from_starting_submission": 1004,
+  "source_row_counts": {
+    "./external/cayley6/outputs/submission_46304_valid.csv": 5,
+    "./external/cayley6/outputs/submission_46330_valid.csv": 1,
+    "./inputs/cube444_merged_46372.csv": 3,
+    "work/broad_slot0_even_r8/batch_0016.csv": 1,
+    "work/candidates_tw_d10_history_full.csv": 1,
+    "work/candidates_tw_d8_high48.csv": 1,
+    "work/candidates_tw_d8_history_partial.csv": 2,
+    "work/harvest/slot1_colored8/batch_000.csv": 1,
+    "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv": 1,
+    "work/service_investigation/official_cube4_results.csv": 15,
+    "work/submissions/best_46452_twshort_d9.csv": 4,
+    "work/submissions/merged_cross_workspace_history_partial_induced.csv": 3,
+    "work/submissions/merged_public_twmerge.csv": 1
+  },
+  "milestones": [
+    {
+      "step": 1,
+      "label": "public_and_local_merge",
+      "score_before": 46378,
+      "score_after": 46332,
+      "gain": 46,
+      "improved_ids": "66,153,503,504,509,510,525,623,629,633,634,635,643,673,675,794,797,799,815,816,818",
+      "report": "work/submissions/merged_46378_all_report.json",
+      "output": "work/submissions/merged_46378_all.csv"
+    },
+    {
+      "step": 2,
+      "label": "cross_workspace_merge",
+      "score_before": 46332,
+      "score_after": 46330,
+      "gain": 2,
+      "improved_ids": "495",
+      "report": "work/submissions/merged_cross_workspace_report.json",
+      "output": "work/submissions/merged_cross_workspace.csv"
+    },
+    {
+      "step": 3,
+      "label": "twsearch_d8_high48",
+      "score_before": 46330,
+      "score_after": 46328,
+      "gain": 2,
+      "improved_ids": "505",
+      "report": "work/submissions/best_46328_report.json",
+      "output": "work/submissions/best_46328.csv"
+    },
+    {
+      "step": 4,
+      "label": "kernel_history_and_induced",
+      "score_before": 46328,
+      "score_after": 46322,
+      "gain": 6,
+      "improved_ids": "550,586,704",
+      "report": "work/submissions/best_46322_report.json",
+      "output": "work/submissions/best_46322.csv"
+    },
+    {
+      "step": 5,
+      "label": "twsearch_d8_history",
+      "score_before": 46322,
+      "score_after": 46318,
+      "gain": 4,
+      "improved_ids": "559,796",
+      "report": "work/submissions/best_46318_report.json",
+      "output": "work/submissions/best_46318.csv"
+    },
+    {
+      "step": 6,
+      "label": "colored_mitm_r8_id575",
+      "score_before": 46318,
+      "score_after": 46316,
+      "gain": 2,
+      "improved_ids": "575",
+      "report": "work/submissions/slot1_colored_live_report.json",
+      "output": "work/submissions/slot1_colored_live_merge.csv"
+    },
+    {
+      "step": 7,
+      "label": "twsearch_d10_id850",
+      "score_before": 46316,
+      "score_after": 46314,
+      "gain": 2,
+      "improved_ids": "850",
+      "report": "work/submissions/merged_tw_d10_into_46316.json",
+      "output": "work/submissions/merged_tw_d10_into_46316.csv"
+    },
+    {
+      "step": 8,
+      "label": "colored_mitm_r8_id686",
+      "score_before": 46314,
+      "score_after": 46312,
+      "gain": 2,
+      "improved_ids": "686",
+      "report": "work/reports/best_46312_broad_even_r8.json",
+      "output": "work/submissions/best_46312_broad_even_r8.csv"
+    },
+    {
+      "step": 9,
+      "label": "sibling_portfolio_merge",
+      "score_before": 46312,
+      "score_after": 46302,
+      "gain": 10,
+      "improved_ids": "213,497,549,630,659",
+      "report": "work/submissions/merged_sibling46304.json",
+      "output": "work/submissions/merged_sibling46304.csv"
+    },
+    {
+      "step": 10,
+      "label": "final_user_portfolio_merge",
+      "score_before": 46302,
+      "score_after": 46296,
+      "gain": 6,
+      "improved_ids": "97,133,346",
+      "report": "work/user_46372/direct_report.json",
+      "output": "work/user_46372/direct_merge.csv"
+    }
+  ]
+}

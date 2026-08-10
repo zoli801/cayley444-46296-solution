@@ -1,0 +1,20 @@
+{
+  "baseline": "work/submissions/best_46302.csv",
+  "batches_this_run": 3,
+  "completed_before_run": 0,
+  "final_score": 46302,
+  "gain": 0,
+  "id_modulus": 1,
+  "id_parity": "all",
+  "id_remainder": 0,
+  "include_identical_reference": true,
+  "incumbent": "work/current_best46302_r8_len40_42/incumbent.csv",
+  "remaining_after_run": 0,
+  "slot": "work/submissions/best_46302.csv",
+  "slot_delta": 0,
+  "starting_score": 46302,
+  "target_count": 33,
+  "target_reference": "work/submissions/best_46302.csv",
+  "tied_path_count": 31,
+  "valid": true
+}

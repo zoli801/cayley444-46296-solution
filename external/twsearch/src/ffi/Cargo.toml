@@ -1,0 +1,22 @@
+[package]
+name = "twips-ffi"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+description = "Twizzle Pattern Searcher FFI — C FFI bindings for twips"
+repository = "https://github.com/cubing/twips"
+
+[features]
+default = []
+
+[dependencies]
+twips = { workspace = true }
+
+[lib]
+path = "./lib.rs"
+crate-type = ["cdylib"]
+
+[dev-dependencies]
+cubing = { workspace = true }
+libloading = "0.8.9"
+test-cdylib = "1.1.0"

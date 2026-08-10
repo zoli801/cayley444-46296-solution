@@ -1,0 +1,7 @@
+Unified Permutation-Puzzle Training
+Copyright 2026 Vlad Kuznetsov
+
+This distribution consolidates and modifies training code and model
+architectures previously developed by Vlad Kuznetsov in the Megaminx and IHES
+solver workspaces. The standalone phase-training manifests contain only the
+categorical targets and permutation actions needed for model training.

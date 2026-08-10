@@ -1,0 +1,180 @@
+{
+  "artifacts": {
+    "all_history_candidate_csv": "work/github_refresh_cube444_all_history.csv",
+    "candidate_csv": "work/github_refresh_cube444.csv",
+    "direct_report": "work/reports/github_refresh_direct_46302.json",
+    "induced_report": "work/reports/github_refresh_induced_46302.json",
+    "union_induced_report": "work/reports/github_refresh_plus_history_induced_46302.json"
+  },
+  "audit_timestamp_utc": "2026-08-10T16:43:43.989163+00:00",
+  "code_findings": {
+    "canonical_sources": [
+      "results/v1/<competition>/<puzzle_type>/<puzzle_id>/<date>/<submission_id>.json",
+      "data/v2/slurm/<competition>/<puzzle_type>/<date>/<submission_id>.json"
+    ],
+    "cube444_v2_records": 0,
+    "generated_views_add_no_candidates": true,
+    "repository_role": "append-only validated result ledger and deterministic aggregate builder; it contains no Cube444 search/solver implementation or model weights",
+    "solver_relevant_observation": "All 490 Cube444 records are first-solution piece-transformer/output-move-count runs with touch radius 4; 467 use profile power 25. These are trajectory diversity, not exact-search code.",
+    "validation_contract": [
+      "JSON schema",
+      "canonical integrity/idempotency",
+      "path/length consistency",
+      "bounded permutation replay",
+      "append-only immutability",
+      "duplicate submission/idempotency scan",
+      "deterministic generated-index byte comparison"
+    ]
+  },
+  "cube444_records": {
+    "all_ref_and_commit_history": {
+      "canonical_envelope_json_blobs_all_competitions": 1153,
+      "cube444_historical_record_blobs": 490,
+      "cube444_historical_unique_id_path_pairs": 459,
+      "cube444_historical_unique_ids": 385,
+      "cube444_v1_records": 490,
+      "cube444_v2_records": 0,
+      "current_main_record_blobs": 490,
+      "historical_blob_set_equals_current_main": true,
+      "historical_only_records": 0,
+      "historical_record_set_equals_current_main": true,
+      "json_objects_under_canonical_roots": 1153,
+      "json_parse_error_count": 0,
+      "main_only_records": 0,
+      "output": "work/github_refresh_cube444_all_history.csv",
+      "reachable_object_lines_under_canonical_roots": 5800
+    },
+    "covered_ids_better_than_best": 0,
+    "covered_ids_trailing_best": 80,
+    "covered_ids_tying_best": 305,
+    "head": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309",
+    "index_extra_records": 0,
+    "index_matches_source_records": true,
+    "index_missing_source_records": 0,
+    "index_row_count": 490,
+    "json_errors": [],
+    "json_record_count": 490,
+    "model_class_counts": {
+      "output_move_count": 490
+    },
+    "model_format_counts": {
+      "piece-transformer": 490
+    },
+    "output": "work/github_refresh_cube444.csv",
+    "prior_snapshot_raw_records": 490,
+    "prior_snapshot_unique_id_path_pairs": 459,
+    "producer_slug_counts": {
+      "cayleypy-2xt4-444-depthsafe": 1,
+      "cayleypy-2xt4-444-example": 21,
+      "cayleypy-2xt4-444-recommended": 1,
+      "cayleypy-2xt4-4x4x4-recommended": 467
+    },
+    "profile_power_counts": {
+      "16": 9,
+      "18": 3,
+      "20": 2,
+      "23": 8,
+      "25": 467,
+      "26": 1
+    },
+    "raw_record_delta": 0,
+    "removed_pair_delta": 0,
+    "replay_invalid_raw_rows": 0,
+    "replay_valid_raw_rows": 490,
+    "shortest_vs_best_46302_slack_counts": {
+      "0": 305,
+      "10": 1,
+      "2": 71,
+      "4": 7,
+      "6": 1
+    },
+    "touch_radius_counts": {
+      "4": 490
+    },
+    "tsv_formula_escape_rows": 214,
+    "unique_id_path_pairs": 459,
+    "unique_ids": 385,
+    "unique_pair_delta": 0
+  },
+  "generated_aggregate_audit": {
+    "competition_index_equals_sources": true,
+    "competition_index_rows": 490,
+    "global_best_all_minimum_length": true,
+    "global_best_all_source_records": true,
+    "global_best_cube444_rows": 385,
+    "global_best_unique_ids": 385,
+    "metadata_solution_rows": 490,
+    "metadata_solutions_equal_sources": true,
+    "puzzle_best_equals_global_best": true,
+    "puzzle_best_rows": 385,
+    "puzzle_directory_count": 385,
+    "puzzle_solution_rows": 490,
+    "puzzle_solutions_equal_sources": true
+  },
+  "merge_results": {
+    "baseline": "work/submissions/best_46302.csv",
+    "baseline_score": 46302,
+    "direct": {
+      "gain": 0,
+      "improved_ids": 0,
+      "score": 46302
+    },
+    "repository_induced": {
+      "directed_edges": 107914,
+      "gain": 0,
+      "improved_ids": 0,
+      "nodes": 53015,
+      "score": 46302
+    },
+    "repository_plus_all_notebook_history_induced": {
+      "directed_edges": 1192570,
+      "gain": 0,
+      "improved_ids": 0,
+      "nodes": 584346,
+      "score": 46302
+    }
+  },
+  "network_policy": {
+    "methods_used": [
+      "GET"
+    ],
+    "post_requests": 0,
+    "remote_mutations": 0,
+    "submissions": 0,
+    "uploads": 0
+  },
+  "repository": {
+    "api_ref_heads_audited": 170,
+    "branch_count": 8,
+    "branches": {
+      "codex/cayleypy-results-ingest": "b7ce82e7d98ddabd6874047e36f354defea87962",
+      "codex/cayleypy-results-publisher": "1670b5c1cf5584415e807e43e5ec930d79f86020",
+      "codex/fix-main-duplicate-idempotency": "d101bba03c65f235f4464320b93f4e72ce7116a0",
+      "codex/fix-native-v2-promotion": "0adf627ad7d68f8820b72d2712045b499a30c432",
+      "codex/fix-piece-transformer-results": "988e00e5f2f7caa1bf654d9700fd4bdba47a7eeb",
+      "codex/human-readable-results": "3eb351a363dc08ee8e8b49af2299f9fb08cf8f9a",
+      "ingest/staging": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309",
+      "main": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309"
+    },
+    "closed_unmerged_pull_requests": 0,
+    "current_main_head": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309",
+    "head_unchanged": true,
+    "local_ref_mismatch_count": 0,
+    "local_ref_mismatches": [],
+    "main_commit_delta_since_prior": 0,
+    "merged_pull_requests": 162,
+    "open_pull_requests": 0,
+    "origin_main_head": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309",
+    "origin_staging_head": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309",
+    "prior_head": "bf3f68e5906e25ac7b8bfabef6c0d81bdfd1d309",
+    "pull_request_count": 162,
+    "pull_request_number_max": 162,
+    "pull_request_number_min": 1,
+    "pull_requests_after_162": 0,
+    "pushed_at": "2026-08-10T07:17:53Z",
+    "tag_count": 0,
+    "unique_api_ref_head_commits": 164,
+    "url": "https://github.com/TryDotAtwo/cayleypy-beam-results"
+  },
+  "scope": "read-only GitHub main, branches, tags, every PR head, and every reachable canonical record object in their full histories"
+}

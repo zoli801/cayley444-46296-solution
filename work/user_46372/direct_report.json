@@ -1,0 +1,59 @@
+{
+  "baseline": "work/submissions/best_46302.csv",
+  "baseline_score": 46302,
+  "gain": 6,
+  "improved_id_count": 3,
+  "improved_ids": [
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "97",
+      "selected_length": 44,
+      "source": "./inputs/cube444_merged_46372.csv",
+      "source_row": 99
+    },
+    {
+      "baseline_length": 40,
+      "gain": 2,
+      "initial_state_id": "133",
+      "selected_length": 38,
+      "source": "./inputs/cube444_merged_46372.csv",
+      "source_row": 135
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "346",
+      "selected_length": 45,
+      "source": "./inputs/cube444_merged_46372.csv",
+      "source_row": 348
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 2086,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 975,
+    "rows_seen": 2086,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1111,
+    "valid_rows": 2086,
+    "zip_files": 0
+  },
+  "merged_score": 46296,
+  "output": "work/user_46372/direct_merge.csv",
+  "provenance": "work/user_46372/direct_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/user_46372/rejections.csv",
+  "source_contributions": {
+    "./inputs/cube444_merged_46372.csv": {
+      "gain": 6,
+      "improved_ids": 3
+    }
+  },
+  "unique_valid_paths": 1111,
+  "valid_candidate_rows": 2086
+}

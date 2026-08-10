@@ -1,0 +1,11 @@
+step,label,score_before,score_after,gain,improved_ids,report,output
+1,public_and_local_merge,46378,46332,46,"66,153,503,504,509,510,525,623,629,633,634,635,643,673,675,794,797,799,815,816,818",work/submissions/merged_46378_all_report.json,work/submissions/merged_46378_all.csv
+2,cross_workspace_merge,46332,46330,2,495,work/submissions/merged_cross_workspace_report.json,work/submissions/merged_cross_workspace.csv
+3,twsearch_d8_high48,46330,46328,2,505,work/submissions/best_46328_report.json,work/submissions/best_46328.csv
+4,kernel_history_and_induced,46328,46322,6,"550,586,704",work/submissions/best_46322_report.json,work/submissions/best_46322.csv
+5,twsearch_d8_history,46322,46318,4,"559,796",work/submissions/best_46318_report.json,work/submissions/best_46318.csv
+6,colored_mitm_r8_id575,46318,46316,2,575,work/submissions/slot1_colored_live_report.json,work/submissions/slot1_colored_live_merge.csv
+7,twsearch_d10_id850,46316,46314,2,850,work/submissions/merged_tw_d10_into_46316.json,work/submissions/merged_tw_d10_into_46316.csv
+8,colored_mitm_r8_id686,46314,46312,2,686,work/reports/best_46312_broad_even_r8.json,work/submissions/best_46312_broad_even_r8.csv
+9,sibling_portfolio_merge,46312,46302,10,"213,497,549,630,659",work/submissions/merged_sibling46304.json,work/submissions/merged_sibling46304.csv
+10,final_user_portfolio_merge,46302,46296,6,"97,133,346",work/user_46372/direct_report.json,work/user_46372/direct_merge.csv

@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "kernel_refs": 64,
+  "kernel_versions": 796,
+  "manifest": "work/kernel_history_get_outputs/manifest.json",
+  "raw_candidate_rows": 3692,
+  "source_files": 830,
+  "unique_id_path_pairs": 2607,
+  "unique_path_strings": 2607
+}

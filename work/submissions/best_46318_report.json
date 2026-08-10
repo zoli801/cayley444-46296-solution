@@ -1,0 +1,51 @@
+{
+  "baseline": "work/submissions/best_46322.csv",
+  "baseline_score": 46322,
+  "gain": 4,
+  "improved_id_count": 2,
+  "improved_ids": [
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "559",
+      "selected_length": 46,
+      "source": "work/candidates_tw_d8_history_partial.csv",
+      "source_row": 521
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "796",
+      "selected_length": 45,
+      "source": "work/candidates_tw_d8_history_partial.csv",
+      "source_row": 790
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 2040,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 526,
+    "rows_seen": 2040,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1514,
+    "valid_rows": 2040,
+    "zip_files": 0
+  },
+  "merged_score": 46318,
+  "output": "work/submissions/best_46318.csv",
+  "provenance": "work/submissions/best_46318_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/best_46318_rejections.csv",
+  "source_contributions": {
+    "work/candidates_tw_d8_history_partial.csv": {
+      "gain": 4,
+      "improved_ids": 2
+    }
+  },
+  "unique_valid_paths": 1514,
+  "valid_candidate_rows": 2040
+}

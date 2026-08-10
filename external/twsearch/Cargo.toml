@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = ["src/lib", "src/cli", "src/ffi", "src/wasm", "script/cargo-run-bin"]
+default-members = ["src/cli"]
+
+[workspace.package]
+version = "0.12.3-dev"
+license = "MPL-2.0"
+edition = "2021"
+repository = "https://github.com/cubing/twips"
+
+[workspace.dependencies]
+cubing = "0.15.2"
+twips = { version = "0.12.3-dev", path = "./src/lib/" }
+
+[workspace.metadata.bin]
+cbindgen = { version = "0.27.0" }
+cargo-binstall = { version = "1.4.4" }
+wasm-pack = { version = "0.13.1" }
+# Doesn't work: https://github.com/bnjbvr/cargo-machete/issues/62
+# cargo-machete = { version = "0.9.1" }

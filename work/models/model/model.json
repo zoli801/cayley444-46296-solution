@@ -1,0 +1,100 @@
+{
+  "augmentation": {
+    "kind": "identity"
+  },
+  "complete": false,
+  "config": {
+    "artifacts": {
+      "export_legacy_weights": true,
+      "output_dir": "artifacts/transformer",
+      "run_id": "cube4-relu-pilot"
+    },
+    "augmentation": {
+      "kind": "identity"
+    },
+    "model": {
+      "kwargs": {
+        "dropout_rate": 0.0,
+        "transformer_activation": "relu",
+        "transformer_d_model": 256,
+        "transformer_ff_dim": 1024,
+        "transformer_heads": 8,
+        "transformer_layers": 4,
+        "transformer_pooling": "cls"
+      },
+      "layout": "cube4",
+      "provider": "piece_transformer"
+    },
+    "name": "p002-t000-q-rw",
+    "objective": {
+      "kind": "sparse_depth_pair",
+      "top1_margin": 1.0,
+      "top1_margin_weight": 0.0
+    },
+    "problem": {
+      "generator_file": "generators/p002.json",
+      "kind": "generator_target",
+      "name": "cube4-p002-t000",
+      "num_classes": 6,
+      "target_file": "targets/p002-t000.pt"
+    },
+    "sampler": {
+      "k_max": 45,
+      "k_min": 2,
+      "kind": "rw_middle_sparse",
+      "move_filter": "inverse",
+      "reject_self_loops": false,
+      "rng_device": "training_device",
+      "selection": "skip_index"
+    },
+    "schema_version": 1,
+    "training": {
+      "allow_tf32": true,
+      "amp": "bf16",
+      "batch_size": 512,
+      "device": "cuda:0",
+      "epochs": 16384,
+      "grad_clip": 1.0,
+      "log_every": 1,
+      "lr": 0.0001,
+      "resume": "artifacts/transformer/p002-t000-q-rw_cube4-relu-pilot_latest.pt",
+      "save_every": 16,
+      "seed": 42,
+      "steps_per_epoch": 256,
+      "val_batch_size": 2048,
+      "val_every": 32,
+      "val_size": 16384,
+      "weight_decay": 0.003
+    }
+  },
+  "device": "cuda:0",
+  "initialization": null,
+  "model": {
+    "kwargs": {
+      "dropout_rate": 0.0,
+      "transformer_activation": "relu",
+      "transformer_d_model": 256,
+      "transformer_ff_dim": 1024,
+      "transformer_heads": 8,
+      "transformer_layers": 4,
+      "transformer_pooling": "cls"
+    },
+    "layout": "cube4",
+    "provider": "piece_transformer"
+  },
+  "name": "p002-t000-q-rw",
+  "num_actions": 24,
+  "num_classes": 6,
+  "parameters": 3383064,
+  "run_id": "cube4-relu-pilot",
+  "sampler": {
+    "k_max": 45,
+    "k_min": 2,
+    "kind": "rw_middle_sparse",
+    "move_filter": "inverse",
+    "reject_self_loops": false,
+    "rng_device": "training_device",
+    "selection": "skip_index"
+  },
+  "state_size": 96
+}

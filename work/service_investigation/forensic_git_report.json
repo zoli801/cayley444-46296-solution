@@ -1,0 +1,29 @@
+{
+  "baseline": "work/submissions/trajectory_compact_induced.csv",
+  "baseline_score": 46456,
+  "gain": 0,
+  "improved_id_count": 0,
+  "improved_ids": [],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 1533,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 199,
+    "rows_seen": 1533,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1334,
+    "valid_rows": 1533,
+    "zip_files": 0
+  },
+  "merged_score": 46456,
+  "output": "work/service_investigation/forensic_git_merged.csv",
+  "provenance": "work/service_investigation/forensic_git_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/service_investigation/forensic_git_rejections.csv",
+  "source_contributions": {},
+  "unique_valid_paths": 1334,
+  "valid_candidate_rows": 1533
+}

@@ -1,0 +1,959 @@
+{
+  "baseline": "work/submissions/baseline_46718.csv",
+  "baseline_score": 46718,
+  "gain": 260,
+  "improved_id_count": 108,
+  "improved_ids": [
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "76",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 15
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "121",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 27
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "142",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 31
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "148",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 33
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "153",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 34
+    },
+    {
+      "baseline_length": 48,
+      "gain": 4,
+      "initial_state_id": "193",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 41
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "226",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 52
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "236",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 55
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "249",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 60
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "256",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 62
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "274",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 68
+    },
+    {
+      "baseline_length": 45,
+      "gain": 2,
+      "initial_state_id": "280",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 71
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "296",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 75
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "298",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 76
+    },
+    {
+      "baseline_length": 49,
+      "gain": 6,
+      "initial_state_id": "302",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 79
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "310",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 83
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "330",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 87
+    },
+    {
+      "baseline_length": 45,
+      "gain": 2,
+      "initial_state_id": "334",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 89
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "350",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 93
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "370",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 97
+    },
+    {
+      "baseline_length": 45,
+      "gain": 2,
+      "initial_state_id": "396",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 108
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "436",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 120
+    },
+    {
+      "baseline_length": 45,
+      "gain": 2,
+      "initial_state_id": "456",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 126
+    },
+    {
+      "baseline_length": 48,
+      "gain": 4,
+      "initial_state_id": "459",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 128
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "464",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 130
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "466",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 132
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "483",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 136
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "487",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 140
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "488",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 142
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "489",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 143
+    },
+    {
+      "baseline_length": 44,
+      "gain": 2,
+      "initial_state_id": "495",
+      "selected_length": 42,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 151
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "503",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 160
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "504",
+      "selected_length": 45,
+      "source": "work/public_outputs/georgstumpf__cube4-beam-search-pure-baseline/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "509",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 169
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "510",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 170
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "514",
+      "selected_length": 45,
+      "source": "work/public_outputs/fangweif__minimal-piece-transformer-inference/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 45,
+      "gain": 2,
+      "initial_state_id": "516",
+      "selected_length": 43,
+      "source": "work/public_outputs/kiranmazumdarshaw__cube4-2xt4-fp16-beam-profiles-study/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 48,
+      "gain": 4,
+      "initial_state_id": "517",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 178
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "519",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 181
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "520",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 183
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "521",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 184
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "530",
+      "selected_length": 45,
+      "source": "work/public_outputs/pavelgolubkov__cayleypy-first-mode-submission-notebook/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "532",
+      "selected_length": 45,
+      "source": "work/public_outputs/saidgutseriev__2xt4-cayleypy-starter-collect-all/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "536",
+      "selected_length": 45,
+      "source": "work/public_outputs/sergeysudarikov__cube4-beam-search-with-publish-off/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 46,
+      "gain": 4,
+      "initial_state_id": "545",
+      "selected_length": 42,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 209
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "546",
+      "selected_length": 45,
+      "source": "work/public_outputs/nikstoronsky__minimal-checkpoint-only-notebook/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "551",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 212
+    },
+    {
+      "baseline_length": 49,
+      "gain": 6,
+      "initial_state_id": "570",
+      "selected_length": 43,
+      "source": "work/public_outputs/vadimhabirov__single-profile-2xt4-mlp-runner/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 4,
+      "initial_state_id": "608",
+      "selected_length": 43,
+      "source": "work/public_outputs/leehernande__state128-fixed-runner-minimal-demo/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "610",
+      "selected_length": 45,
+      "source": "work/public_outputs/emmanuelakyeampong__checkpoint-only-beam-search-template/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "614",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 228
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "623",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 230
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "628",
+      "selected_length": 45,
+      "source": "work/public_outputs/xushihuilis__cube4-piece-transformer-beam-search/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "629",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 238
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "633",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 243
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "634",
+      "selected_length": 45,
+      "source": "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "635",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 247
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "643",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 260
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "650",
+      "selected_length": 45,
+      "source": "work/public_outputs/georgekaiser__cube4-beam-search-minimal-config/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 46,
+      "gain": 4,
+      "initial_state_id": "651",
+      "selected_length": 42,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 276
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "653",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 282
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "656",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 288
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "657",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 290
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "658",
+      "selected_length": 45,
+      "source": "work/public_outputs/raydalio__cayleypy-cube4-quick-beam-starter/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "660",
+      "selected_length": 45,
+      "source": "work/public_outputs/johntuu__cube4-state128-baseline-notebook/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "667",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 307
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "673",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 314
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "675",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 316
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "695",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 320
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "707",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 321
+    },
+    {
+      "baseline_length": 47,
+      "gain": 4,
+      "initial_state_id": "724",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 330
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "729",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 331
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "737",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 332
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "738",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 333
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "792",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 341
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "794",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 344
+    },
+    {
+      "baseline_length": 50,
+      "gain": 6,
+      "initial_state_id": "797",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 346
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "798",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 348
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "799",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 350
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "806",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 360
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "807",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 363
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "815",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 372
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "816",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 373
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "818",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 375
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "827",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 385
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "832",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 389
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "842",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 400
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "843",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 401
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "845",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 404
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "846",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 405
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "848",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 408
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "849",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 409
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "852",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 413
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "857",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 418
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "859",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 420
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "863",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 425
+    },
+    {
+      "baseline_length": 49,
+      "gain": 4,
+      "initial_state_id": "864",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 426
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "866",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 430
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "872",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 437
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "874",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 439
+    },
+    {
+      "baseline_length": 47,
+      "gain": 4,
+      "initial_state_id": "880",
+      "selected_length": 43,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 445
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "881",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 446
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "884",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 449
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "886",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 451
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "887",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 453
+    },
+    {
+      "baseline_length": 46,
+      "gain": 4,
+      "initial_state_id": "891",
+      "selected_length": 42,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 457
+    },
+    {
+      "baseline_length": 49,
+      "gain": 2,
+      "initial_state_id": "892",
+      "selected_length": 47,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 458
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "999",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 487
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 234,
+    "candidate_rows": 114301,
+    "csv_sources": 296,
+    "filesystem_files": 296,
+    "invalid_rows": 0,
+    "replay_cache_hits": 98303,
+    "rows_seen": 114301,
+    "skipped_csv_sources": 62,
+    "source_errors": [],
+    "unique_replays": 15998,
+    "valid_rows": 114301,
+    "zip_files": 0
+  },
+  "merged_score": 46458,
+  "output": "work/submissions/merged_official_all_public.csv",
+  "provenance": "work/submissions/merged_official_all_public_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/merged_official_all_public_rejections.csv",
+  "source_contributions": {
+    "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/emmanuelakyeampong__checkpoint-only-beam-search-template/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/fangweif__minimal-piece-transformer-inference/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/georgekaiser__cube4-beam-search-minimal-config/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/georgstumpf__cube4-beam-search-pure-baseline/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/johntuu__cube4-state128-baseline-notebook/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/kiranmazumdarshaw__cube4-2xt4-fp16-beam-profiles-study/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/leehernande__state128-fixed-runner-minimal-demo/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 4,
+      "improved_ids": 1
+    },
+    "work/public_outputs/nikstoronsky__minimal-checkpoint-only-notebook/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/pavelgolubkov__cayleypy-first-mode-submission-notebook/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/raydalio__cayleypy-cube4-quick-beam-starter/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 4,
+      "improved_ids": 1
+    },
+    "work/public_outputs/saidgutseriev__2xt4-cayleypy-starter-collect-all/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 4,
+      "improved_ids": 1
+    },
+    "work/public_outputs/sergeysudarikov__cube4-beam-search-with-publish-off/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/public_outputs/vadimhabirov__single-profile-2xt4-mlp-runner/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 6,
+      "improved_ids": 1
+    },
+    "work/public_outputs/xushihuilis__cube4-piece-transformer-beam-search/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/service_investigation/official_cube4_results.csv": {
+      "gain": 220,
+      "improved_ids": 93
+    }
+  },
+  "unique_valid_paths": 15998,
+  "valid_candidate_rows": 114301
+}

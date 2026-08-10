@@ -1,0 +1,17 @@
+/.temp
+/dist
+/node_modules
+
+# Rust
+/target
+
+# `cargo-run-bin`
+/.bin
+
+# Legacy top-level files
+# These are no longer produced, but we want to avoid commmiting them,
+# in case they get left in the top dir around after testing old commits.
+/package-lock.json
+
+# Temporary ignores for dev.
+/src/ruby-gem

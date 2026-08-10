@@ -1,0 +1,59 @@
+{
+  "baseline": "work/submissions/best_46328.csv",
+  "baseline_score": 46328,
+  "gain": 6,
+  "improved_id_count": 3,
+  "improved_ids": [
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "550",
+      "selected_length": 45,
+      "source": "work/submissions/merged_cross_workspace_history_partial_induced.csv",
+      "source_row": 552
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "586",
+      "selected_length": 45,
+      "source": "work/submissions/merged_cross_workspace_history_partial_induced.csv",
+      "source_row": 588
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "704",
+      "selected_length": 45,
+      "source": "work/submissions/merged_cross_workspace_history_partial_induced.csv",
+      "source_row": 706
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 2086,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 588,
+    "rows_seen": 2086,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1498,
+    "valid_rows": 2086,
+    "zip_files": 0
+  },
+  "merged_score": 46322,
+  "output": "work/submissions/best_46322.csv",
+  "provenance": "work/submissions/best_46322_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/best_46322_rejections.csv",
+  "source_contributions": {
+    "work/submissions/merged_cross_workspace_history_partial_induced.csv": {
+      "gain": 6,
+      "improved_ids": 3
+    }
+  },
+  "unique_valid_paths": 1498,
+  "valid_candidate_rows": 2086
+}

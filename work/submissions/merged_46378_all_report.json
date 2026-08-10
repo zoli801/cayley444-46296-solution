@@ -1,0 +1,215 @@
+{
+  "baseline": "./inputs/cube4_submission_46378.csv",
+  "baseline_score": 46378,
+  "gain": 46,
+  "improved_id_count": 21,
+  "improved_ids": [
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "66",
+      "selected_length": 45,
+      "source": "work/submissions/best_46452_twshort_d9.csv",
+      "source_row": 68
+    },
+    {
+      "baseline_length": 44,
+      "gain": 2,
+      "initial_state_id": "153",
+      "selected_length": 42,
+      "source": "work/submissions/best_46452_twshort_d9.csv",
+      "source_row": 155
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "503",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 160
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "504",
+      "selected_length": 45,
+      "source": "work/submissions/merged_public_twmerge.csv",
+      "source_row": 506
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "509",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 169
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "510",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 170
+    },
+    {
+      "baseline_length": 44,
+      "gain": 2,
+      "initial_state_id": "525",
+      "selected_length": 42,
+      "source": "work/submissions/best_46452_twshort_d9.csv",
+      "source_row": 527
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "623",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 230
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "629",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 238
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "633",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 243
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "634",
+      "selected_length": 45,
+      "source": "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv",
+      "source_row": 2
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "635",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 247
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "643",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 260
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "673",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 314
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "675",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 316
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "794",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 344
+    },
+    {
+      "baseline_length": 50,
+      "gain": 6,
+      "initial_state_id": "797",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 346
+    },
+    {
+      "baseline_length": 48,
+      "gain": 2,
+      "initial_state_id": "799",
+      "selected_length": 46,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 350
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "815",
+      "selected_length": 44,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 372
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "816",
+      "selected_length": 45,
+      "source": "work/submissions/best_46452_twshort_d9.csv",
+      "source_row": 818
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "818",
+      "selected_length": 45,
+      "source": "work/service_investigation/official_cube4_results.csv",
+      "source_row": 375
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 268,
+    "candidate_rows": 146634,
+    "csv_sources": 333,
+    "filesystem_files": 333,
+    "invalid_rows": 0,
+    "replay_cache_hits": 128426,
+    "rows_seen": 146634,
+    "skipped_csv_sources": 65,
+    "source_errors": [],
+    "unique_replays": 18208,
+    "valid_rows": 146634,
+    "zip_files": 0
+  },
+  "merged_score": 46332,
+  "output": "work/submissions/merged_46378_all.csv",
+  "provenance": "work/submissions/merged_46378_all_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/merged_46378_all_rejections.csv",
+  "source_contributions": {
+    "work/public_outputs/dingshijiana__minimal-cayleypy-notebook-for-cube4/cayleypy_public/output/solutions/all_solutions.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    },
+    "work/service_investigation/official_cube4_results.csv": {
+      "gain": 34,
+      "improved_ids": 15
+    },
+    "work/submissions/best_46452_twshort_d9.csv": {
+      "gain": 8,
+      "improved_ids": 4
+    },
+    "work/submissions/merged_public_twmerge.csv": {
+      "gain": 2,
+      "improved_ids": 1
+    }
+  },
+  "unique_valid_paths": 18208,
+  "valid_candidate_rows": 146634
+}

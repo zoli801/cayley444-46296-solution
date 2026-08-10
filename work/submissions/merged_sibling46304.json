@@ -1,0 +1,75 @@
+{
+  "baseline": "work/submissions/best_46312.csv",
+  "baseline_score": 46312,
+  "gain": 10,
+  "improved_id_count": 5,
+  "improved_ids": [
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "213",
+      "selected_length": 44,
+      "source": "./external/cayley6/outputs/submission_46304_valid.csv",
+      "source_row": 215
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "497",
+      "selected_length": 44,
+      "source": "./external/cayley6/outputs/submission_46304_valid.csv",
+      "source_row": 499
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "549",
+      "selected_length": 44,
+      "source": "./external/cayley6/outputs/submission_46304_valid.csv",
+      "source_row": 551
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "630",
+      "selected_length": 45,
+      "source": "./external/cayley6/outputs/submission_46304_valid.csv",
+      "source_row": 632
+    },
+    {
+      "baseline_length": 46,
+      "gain": 2,
+      "initial_state_id": "659",
+      "selected_length": 44,
+      "source": "./external/cayley6/outputs/submission_46304_valid.csv",
+      "source_row": 661
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 2086,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 1035,
+    "rows_seen": 2086,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1051,
+    "valid_rows": 2086,
+    "zip_files": 0
+  },
+  "merged_score": 46302,
+  "output": "work/submissions/merged_sibling46304.csv",
+  "provenance": "work/submissions/merged_sibling46304_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/merged_public_rejections.csv",
+  "source_contributions": {
+    "./external/cayley6/outputs/submission_46304_valid.csv": {
+      "gain": 10,
+      "improved_ids": 5
+    }
+  },
+  "unique_valid_paths": 1051,
+  "valid_candidate_rows": 2086
+}

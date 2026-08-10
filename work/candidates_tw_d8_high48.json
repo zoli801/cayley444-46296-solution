@@ -1,0 +1,12 @@
+{
+  "baseline": "work/submissions/merged_cross_workspace.csv",
+  "baseline_score": 46330,
+  "candidate_count": 627,
+  "elapsed_seconds": 49.36063391600328,
+  "max_depth": 8,
+  "max_slack": 4,
+  "merged_score_floor": 46328,
+  "min_baseline_length": 48,
+  "potential_gain": 2,
+  "shortened_candidate_count": 6
+}

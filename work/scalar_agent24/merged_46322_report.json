@@ -1,0 +1,29 @@
+{
+  "baseline": "work/submissions/best_46322.csv",
+  "baseline_score": 46322,
+  "gain": 0,
+  "improved_id_count": 0,
+  "improved_ids": [],
+  "ingest": {
+    "candidate_csv_sources": 21,
+    "candidate_rows": 2086,
+    "csv_sources": 22,
+    "filesystem_files": 22,
+    "invalid_rows": 0,
+    "replay_cache_hits": 1039,
+    "rows_seen": 2086,
+    "skipped_csv_sources": 1,
+    "source_errors": [],
+    "unique_replays": 1047,
+    "valid_rows": 2086,
+    "zip_files": 0
+  },
+  "merged_score": 46322,
+  "output": "work/scalar_agent24/merged_46322.csv",
+  "provenance": "work/scalar_agent24/merged_46322_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/scalar_agent24/merged_46322_rejections.csv",
+  "source_contributions": {},
+  "unique_valid_paths": 1047,
+  "valid_candidate_rows": 2086
+}

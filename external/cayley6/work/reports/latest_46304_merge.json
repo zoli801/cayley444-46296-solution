@@ -1,0 +1,23 @@
+{
+  "output": "./external/cayley6/work/candidates/latest_46304_merge.csv",
+  "output_sha256": "824da0d7b0db86541a2a788bf4f36d3dc775c8c8f32f645a252bcf3ed406ced2",
+  "rows": 1043,
+  "score": 46304,
+  "selected_row_counts": {
+    "./external/cayley6/work/candidates/latest46306_allcorpus_framefp.csv": 1,
+    "./external/cayley6/work/candidates/latest_46306_merge.csv": 1042
+  },
+  "sources": [
+    {
+      "path": "./external/cayley6/work/candidates/latest_46306_merge.csv",
+      "score": 46306,
+      "sha256": "256bfbb84e4b7711754bba70666db18580b0df091492c8f6caf9b742fab2d913"
+    },
+    {
+      "path": "./external/cayley6/work/candidates/latest46306_allcorpus_framefp.csv",
+      "score": 46304,
+      "sha256": "824da0d7b0db86541a2a788bf4f36d3dc775c8c8f32f645a252bcf3ed406ced2"
+    }
+  ],
+  "status": "VALID"
+}

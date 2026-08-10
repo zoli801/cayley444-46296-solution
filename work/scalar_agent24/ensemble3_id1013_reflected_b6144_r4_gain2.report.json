@@ -1,0 +1,43 @@
+{
+  "agent_count": 3,
+  "assigned_ids": null,
+  "attempts": [
+    {
+      "beam_width": 6144,
+      "depths_completed": 46,
+      "expanded_candidates": 5216902,
+      "improved_by": 0,
+      "incumbent_length": 48,
+      "incumbent_suffix_length": 48,
+      "peak_unique_candidates": 121506,
+      "prefix_length": 0,
+      "puzzle_id": 1013,
+      "runtime_seconds": 57.069752,
+      "scored_candidates": 5056829,
+      "solution_length": null,
+      "stop_reason": "depth_limit",
+      "variant": "reflected"
+    }
+  ],
+  "baseline": "work/submissions/best_46328.csv",
+  "checkpoints": [
+    "work/models/scalar_agents/16-01.pth",
+    "work/models/scalar_agents/16-11.pth",
+    "work/models/scalar_agents/16-24.pth"
+  ],
+  "device": "mps",
+  "improvements": {},
+  "model_contract": {
+    "hidden1": 1010,
+    "hidden2": 592,
+    "num_classes": 6,
+    "residual_count": 4,
+    "state_size": 96
+  },
+  "selected_ids": [
+    1013
+  ],
+  "total_runtime_seconds": 57.069752,
+  "touch_radius": 4,
+  "touch_states": 182407
+}

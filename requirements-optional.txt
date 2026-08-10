@@ -1,0 +1,8 @@
+# Core validation, blending, provenance export: Python 3.11+ standard library only.
+# Optional neural/model utilities:
+numpy>=2.0
+torch>=2.4
+requests>=2.31
+kaggle>=1.7
+kagglesdk
+

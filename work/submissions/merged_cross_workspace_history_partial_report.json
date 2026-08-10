@@ -1,0 +1,51 @@
+{
+  "baseline": "work/submissions/merged_cross_workspace.csv",
+  "baseline_score": 46330,
+  "gain": 4,
+  "improved_id_count": 2,
+  "improved_ids": [
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "550",
+      "selected_length": 45,
+      "source": "work/kernel_history_get_candidates_partial.csv",
+      "source_row": 304
+    },
+    {
+      "baseline_length": 47,
+      "gain": 2,
+      "initial_state_id": "586",
+      "selected_length": 45,
+      "source": "work/kernel_history_get_candidates_partial.csv",
+      "source_row": 358
+    }
+  ],
+  "ingest": {
+    "candidate_csv_sources": 2,
+    "candidate_rows": 1892,
+    "csv_sources": 2,
+    "filesystem_files": 2,
+    "invalid_rows": 0,
+    "replay_cache_hits": 77,
+    "rows_seen": 1892,
+    "skipped_csv_sources": 0,
+    "source_errors": [],
+    "unique_replays": 1815,
+    "valid_rows": 1892,
+    "zip_files": 0
+  },
+  "merged_score": 46326,
+  "output": "work/submissions/merged_cross_workspace_history_partial.csv",
+  "provenance": "work/submissions/merged_cross_workspace_history_partial_provenance.csv",
+  "puzzle_count": 1043,
+  "rejections": "work/submissions/merged_cross_workspace_history_partial_rejections.csv",
+  "source_contributions": {
+    "work/kernel_history_get_candidates_partial.csv": {
+      "gain": 4,
+      "improved_ids": 2
+    }
+  },
+  "unique_valid_paths": 1815,
+  "valid_candidate_rows": 1892
+}

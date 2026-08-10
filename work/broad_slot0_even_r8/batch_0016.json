@@ -1,0 +1,138 @@
+{
+  "baseline": "work/submissions/best_46316.csv",
+  "candidate": "work/broad_slot0_even_r8/batch_0016.csv",
+  "candidate_score": 46314,
+  "elapsed_seconds": 73.9973313340015,
+  "id_parity": "even",
+  "ids": [
+    "630",
+    "640",
+    "642",
+    "664",
+    "680",
+    "686",
+    "692",
+    "696"
+  ],
+  "improvements": [
+    {
+      "gain": 2,
+      "initial_state_id": "686",
+      "new_length": 45,
+      "old_length": 47
+    }
+  ],
+  "incumbent_score": 46314,
+  "lengths": [
+    47,
+    47,
+    47,
+    47,
+    47,
+    47,
+    47,
+    47
+  ],
+  "log": "work/broad_slot0_even_r8/batch_0016.log",
+  "outcomes": [
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "630",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "640",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "642",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "664",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "680",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 45,
+      "incumbent_length": 47,
+      "initial_state_id": "686",
+      "reference_length": 47,
+      "slot_gain": 2,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "692",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    },
+    {
+      "candidate_length": 47,
+      "incumbent_length": 47,
+      "initial_state_id": "696",
+      "reference_length": 47,
+      "slot_gain": 0,
+      "slot_length": 47
+    }
+  ],
+  "relations": "work/broad_slot0_even_r8/batch_0016.tsv",
+  "slot": "work/broad_tied_slots/slot_0.csv",
+  "slot_delta": 0,
+  "target_reference": "work/submissions/best_46316.csv",
+  "ties": [
+    {
+      "initial_state_id": "630",
+      "length": 47
+    },
+    {
+      "initial_state_id": "640",
+      "length": 47
+    },
+    {
+      "initial_state_id": "642",
+      "length": 47
+    },
+    {
+      "initial_state_id": "664",
+      "length": 47
+    },
+    {
+      "initial_state_id": "680",
+      "length": 47
+    },
+    {
+      "initial_state_id": "692",
+      "length": 47
+    },
+    {
+      "initial_state_id": "696",
+      "length": 47
+    }
+  ],
+  "valid": true
+}
