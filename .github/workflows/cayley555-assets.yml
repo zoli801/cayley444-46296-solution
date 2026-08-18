@@ -1,100 +1,21 @@
 name: Prepare Cayley 555 assets
 
 on:
-  push:
-    branches:
-      - tmp-cayley555-assets-20260818
-    paths:
-      - .github/workflows/cayley555-assets.yml
   pull_request:
-    branches:
-      - main
+    branches: [main]
     paths:
       - .github/workflows/cayley555-assets.yml
   workflow_dispatch:
+
+concurrency:
+  group: cayley555-assets
+  cancel-in-progress: true
 
 permissions:
   contents: read
 
 jobs:
-  package-assets:
+  stop-duplicates:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
-      - name: Checkout host repository
-        uses: actions/checkout@v4
-
-      - name: Fetch public solver assets and candidate paths
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p bundle/khoruzhii bundle/birdwatcher/data bundle/birdwatcher/output bundle/birdwatcher/dust
-
-          git clone --depth 1 https://github.com/khoruzhii/cayleypy-cube.git khoruzhii-src
-          cp khoruzhii-src/weights/p003-t000_555_e08192.pth bundle/khoruzhii/
-          cp khoruzhii-src/generators/p003.json bundle/khoruzhii/
-          cp khoruzhii-src/targets/p003-t000.pt bundle/khoruzhii/
-          cp khoruzhii-src/datasets/p003-t000-santa.pt bundle/khoruzhii/
-          cp khoruzhii-src/test.py bundle/khoruzhii/
-          cp -r khoruzhii-src/pilgrim bundle/khoruzhii/
-          cp khoruzhii-src/requirements.txt bundle/khoruzhii/
-          cp -r khoruzhii-src/logs bundle/khoruzhii/ || true
-
-          git clone https://github.com/birdwatcherYT/santa2023.git birdwatcher-src
-          cd birdwatcher-src
-          git checkout 78595af81d185fb1086bb2bdb3935299e0b3d71f
-          cd ..
-          cp birdwatcher-src/heuristic.cpp bundle/birdwatcher/
-          cp birdwatcher-src/cube.cpp bundle/birdwatcher/
-          cp birdwatcher-src/tools.cpp bundle/birdwatcher/ || true
-          cp birdwatcher-src/Makefile bundle/birdwatcher/
-          cp birdwatcher-src/README.md bundle/birdwatcher/
-          cp birdwatcher-src/csv_to_txt.py bundle/birdwatcher/
-          cp birdwatcher-src/txt_to_csv.py bundle/birdwatcher/
-          cp birdwatcher-src/submission.csv bundle/birdwatcher/ || true
-          cp birdwatcher-src/dust/*.csv bundle/birdwatcher/dust/ || true
-          for id in $(seq 210 244); do
-            cp "birdwatcher-src/data/${id}.txt" bundle/birdwatcher/data/
-            cp "birdwatcher-src/output/${id}.txt" bundle/birdwatcher/output/ || true
-          done
-
-          # Extract every historical version of the relevant 5x5 output files and CSVs.
-          python - <<'PY'
-          import json, pathlib, subprocess
-          repo = pathlib.Path('birdwatcher-src')
-          out = pathlib.Path('bundle/birdwatcher/history_candidates.jsonl')
-          relevant = [f'output/{i}.txt' for i in range(210,245)] + [
-              'submission.csv',
-              'dust/Bidirectional_Brute_Force_w_Wildcards.csv',
-              'dust/K_step_optimal_solution.csv',
-              'dust/Kociemba_two_phase_algo.csv',
-              'dust/Kociemba_w_Greedy.csv',
-              'dust/k-step.csv',
-              'dust/solver_submit.csv',
-              'dust/solver_submit_stripe.csv',
-          ]
-          commits = subprocess.check_output(['git','-C',str(repo),'rev-list','--all','--',*relevant], text=True).split()
-          seen=set()
-          with out.open('w') as f:
-              for commit in commits:
-                  for path in relevant:
-                      key=(commit,path)
-                      if key in seen: continue
-                      seen.add(key)
-                      p=subprocess.run(['git','-C',str(repo),'show',f'{commit}:{path}'],text=True,capture_output=True)
-                      if p.returncode or not p.stdout.strip(): continue
-                      f.write(json.dumps({'commit':commit,'path':path,'content':p.stdout},ensure_ascii=False)+'\n')
-          print('historical commits',len(commits),'records',len(seen),'bytes',out.stat().st_size)
-          PY
-
-          find bundle -type f -print0 | sort -z | xargs -0 sha256sum > bundle/SHA256SUMS.txt
-          du -ah bundle | sort -h | tail -40
-
-      - name: Upload bundle
-        uses: actions/upload-artifact@v4
-        with:
-          name: cayley555-assets-expanded
-          path: bundle
-          if-no-files-found: error
-          compression-level: 6
-          retention-days: 1
+      - run: echo "Asset bundles have already been downloaded; duplicate packaging runs are disabled."
