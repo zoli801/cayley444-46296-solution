@@ -1,0 +1,38 @@
+name: Package 555 exact-search tools
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/package-555-tools.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p bundle
+          cp -r src bundle/
+          mkdir -p bundle/external
+          cp -r external/helpers bundle/external/
+          cp -r external/models bundle/external/
+          cp -r external/twsearch bundle/external/ || true
+          cp -r tmp555 bundle/ || true
+          cp README.md bundle/ || true
+          find bundle -type f -print0 | sort -z | xargs -0 sha256sum > bundle/SHA256SUMS.txt
+          du -sh bundle
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cayley444-tools-for-555
+          path: bundle
+          compression-level: 6
+          retention-days: 1

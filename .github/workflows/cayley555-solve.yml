@@ -1,0 +1,84 @@
+name: Cayley 555 parallel solve
+
+on:
+  push:
+    branches:
+      - tmp-cayley555-assets-20260818
+    paths:
+      - .github/workflows/cayley555-solve.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/cayley555-solve.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        pid: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch solver and install
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git clone --depth 1 https://github.com/khoruzhii/cayleypy-cube.git solver
+          python -m pip install --upgrade pip
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install cayleypy tqdm numpy
+          cd solver
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          for p in [Path('test.py'), *Path('pilgrim').rglob('*.py')]:
+              s=p.read_text()
+              s=re.sub(r"torch\.device\(f?[\"']cuda(?::[^\"']*)?[\"']\)", "torch.device('cpu')", s)
+              s=re.sub(r"f?[\"']cuda:\{[^\"']+\}[\"']", "'cpu'", s)
+              s=s.replace("'cuda'", "'cpu'").replace('"cuda"', '"cpu"')
+              p.write_text(s)
+          Path('sitecustomize.py').write_text('''\nimport torch\nif not torch.cuda.is_available():\n    torch.Tensor.cuda=lambda self,*a,**k:self\n    torch.nn.Module.cuda=lambda self,*a,**k:self\n    torch.cuda.set_device=lambda *a,**k:None\n    torch.cuda.empty_cache=lambda *a,**k:None\n    torch.cuda.synchronize=lambda *a,**k:None\n''')
+          PY
+      - name: Search several deterministic configurations
+        shell: bash
+        env:
+          PID: ${{ matrix.pid }}
+          PYTHONPATH: ${{ github.workspace }}/solver
+          OMP_NUM_THREADS: '4'
+        run: |
+          set +e
+          cd solver
+          mkdir -p ../results/pid_${PID}
+          for B in 1024 4096 16384; do
+            for A in 2 5; do
+              timeout 1600s python -u test.py \
+                --group_id 3 --target_id 0 --dataset santa \
+                --model_id 555 --epoch 8192 \
+                --B ${B} --num_attempts ${A} --num_steps 180 \
+                --tests_num 1 --shift ${PID} --device_id -1 --verbose 0 \
+                > ../results/pid_${PID}/B${B}_A${A}.stdout 2> ../results/pid_${PID}/B${B}_A${A}.stderr
+              cp -r logs ../results/pid_${PID}/logs_B${B}_A${A} 2>/dev/null || true
+            done
+          done
+          find ../results/pid_${PID} -type f -maxdepth 3 -print
+          exit 0
+      - name: Upload search logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: cayley555-pid-${{ matrix.pid }}
+          path: results/pid_${{ matrix.pid }}
+          compression-level: 6
+          retention-days: 1
+          if-no-files-found: warn

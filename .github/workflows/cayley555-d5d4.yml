@@ -1,0 +1,21 @@
+name: Exact Cayley 555 5+4 search
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/cayley555-d5d4.yml
+  workflow_dispatch:
+
+concurrency:
+  group: cayley555-d5d4
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  stop-duplicates:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The completed exact 5+4 result set is preserved in run 32142976093; duplicate runs are disabled."

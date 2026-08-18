@@ -1,0 +1,21 @@
+name: Mine public Santa 2023 repositories
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/cayley555-public-mining.yml
+  workflow_dispatch:
+
+concurrency:
+  group: cayley555-public-mining
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  stop-duplicates:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The public repository bundle has already been downloaded; duplicate mining runs are disabled."

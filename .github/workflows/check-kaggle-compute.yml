@@ -1,0 +1,39 @@
+name: Check Kaggle compute availability
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/check-kaggle-compute.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check credential presence without exposing values
+        shell: bash
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          mkdir -p result
+          if [[ -n "$KAGGLE_USERNAME" && -n "$KAGGLE_KEY" ]]; then
+            echo classic=yes > result/status.txt
+          else
+            echo classic=no > result/status.txt
+          fi
+          if [[ -n "$KAGGLE_API_TOKEN" ]]; then
+            echo token=yes >> result/status.txt
+          else
+            echo token=no >> result/status.txt
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-compute-status
+          path: result/status.txt
+          retention-days: 1
