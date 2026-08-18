@@ -1,0 +1,62 @@
+name: Prepare Cayley 555 assets
+
+on:
+  push:
+    branches:
+      - tmp-cayley555-assets-20260818
+    paths:
+      - .github/workflows/cayley555-assets.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout host repository
+        uses: actions/checkout@v4
+
+      - name: Fetch public solver assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p bundle/khoruzhii bundle/birdwatcher
+
+          git clone --depth 1 https://github.com/khoruzhii/cayleypy-cube.git khoruzhii-src
+          cp khoruzhii-src/weights/p003-t000_555_e08192.pth bundle/khoruzhii/
+          cp khoruzhii-src/generators/p003.json bundle/khoruzhii/
+          cp khoruzhii-src/targets/p003-t000.pt bundle/khoruzhii/
+          cp khoruzhii-src/datasets/p003-t000-santa.pt bundle/khoruzhii/
+          cp khoruzhii-src/test.py bundle/khoruzhii/
+          cp -r khoruzhii-src/pilgrim bundle/khoruzhii/
+          cp khoruzhii-src/requirements.txt bundle/khoruzhii/
+
+          git clone https://github.com/birdwatcherYT/santa2023.git birdwatcher-src
+          cd birdwatcher-src
+          git checkout 78595af81d185fb1086bb2bdb3935299e0b3d71f
+          cd ..
+          cp birdwatcher-src/heuristic.cpp bundle/birdwatcher/
+          cp birdwatcher-src/cube.cpp bundle/birdwatcher/
+          cp birdwatcher-src/Makefile bundle/birdwatcher/
+          cp birdwatcher-src/README.md bundle/birdwatcher/
+          cp birdwatcher-src/csv_to_txt.py bundle/birdwatcher/
+          cp birdwatcher-src/txt_to_csv.py bundle/birdwatcher/
+          mkdir -p bundle/birdwatcher/data
+          for id in $(seq 210 244); do
+            cp "birdwatcher-src/data/${id}.txt" bundle/birdwatcher/data/
+          done
+
+          find bundle -type f -print0 | sort -z | xargs -0 sha256sum > bundle/SHA256SUMS.txt
+          du -ah bundle | sort -h | tail -30
+
+      - name: Upload bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: cayley555-assets
+          path: bundle
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 1
