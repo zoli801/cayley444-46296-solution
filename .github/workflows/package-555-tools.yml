@@ -16,8 +16,6 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
       - name: Collect sources
         shell: bash
         run: |
@@ -28,6 +26,7 @@ jobs:
           cp -r external/helpers bundle/external/
           cp -r external/models bundle/external/
           cp -r external/twsearch bundle/external/ || true
+          cp -r tmp555 bundle/ || true
           cp README.md bundle/ || true
           find bundle -type f -print0 | sort -z | xargs -0 sha256sum > bundle/SHA256SUMS.txt
           du -sh bundle
