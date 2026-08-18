@@ -1,90 +1,21 @@
 name: Mine public Santa 2023 repositories
 
 on:
-  push:
-    branches:
-      - tmp-cayley555-assets-20260818
-    paths:
-      - .github/workflows/cayley555-public-mining.yml
   pull_request:
-    branches:
-      - main
+    branches: [main]
     paths:
       - .github/workflows/cayley555-public-mining.yml
   workflow_dispatch:
+
+concurrency:
+  group: cayley555-public-mining
+  cancel-in-progress: true
 
 permissions:
   contents: read
 
 jobs:
-  collect:
+  stop-duplicates:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Clone and collect public text artifacts
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p collected reports repos
-          REPOS=(
-            itswin/santa-2023
-            Zaburunier/Kaggle-Santa-2023-Polytope-Permutation-Puzzle
-            k-harada/santa2023
-            yunsue78/Kaggle-Santa-2023-Polytope-Permutation-Puzzle
-            daikichiba9514/kaggle-santa2023
-            matsuyanagi/santa2023
-            yu-chan-kuchinashi/kaggle-santa-2023
-            JamiePlace/kaggle-santa-2023-the-polytope-permutation-puzzle
-            rohitashwachaks/kaggle-polytope-permutation-puzzles
-            birdwatcherYT/santa2023
-            toast-uz/santa2023
-            local-opt-solver/santa2023
-          )
-
-          : > reports/clones.tsv
-          for full in "${REPOS[@]}"; do
-            slug="${full//\//__}"
-            echo "=== $full ==="
-            if git clone --depth 1 "https://github.com/${full}.git" "repos/${slug}"; then
-              echo -e "OK\t${full}" >> reports/clones.tsv
-              mkdir -p "collected/${slug}"
-              cd "repos/${slug}"
-              find . -path './.git' -prune -o -type f -size -25M \
-                \( -iname '*.csv' -o -iname '*.txt' -o -iname '*.json' -o -iname '*.jsonl' \
-                   -o -iname '*.py' -o -iname '*.cpp' -o -iname '*.cc' -o -iname '*.c' -o -iname '*.h' \
-                   -o -iname '*.rs' -o -iname '*.md' -o -iname '*.ipynb' -o -iname '*.sh' -o -iname '*.tsv' \
-                   -o -iname '*.log' -o -iname '*.yaml' -o -iname '*.yml' -o -iname '*.toml' \
-                   -o -iname '*.zip' -o -iname '*.gz' -o -iname '*.xz' -o -iname '*.7z' \) \
-                -print0 | while IFS= read -r -d '' f; do
-                  mkdir -p "../../collected/${slug}/$(dirname "$f")"
-                  cp "$f" "../../collected/${slug}/$f"
-                done
-              {
-                echo "# file list"
-                find . -path './.git' -prune -o -type f -printf '%s\t%p\n' | sort -n
-                echo
-                echo "# keyword hits"
-                grep -RIlE 'cube_5/5/5|initial_state_id|submission|solution|puzzle_id|210\.txt' . --exclude-dir=.git 2>/dev/null || true
-              } > "../../reports/${slug}.txt"
-              cd ../..
-            else
-              echo -e "FAIL\t${full}" >> reports/clones.tsv
-              rm -rf "repos/${slug}"
-            fi
-          done
-
-          find collected -type f -printf '%s\t%p\n' | sort -n > reports/collected-files.tsv
-          du -sh collected reports
-
-      - name: Upload collected repositories
-        uses: actions/upload-artifact@v4
-        with:
-          name: cayley555-public-mining
-          path: |
-            collected
-            reports
-          compression-level: 6
-          retention-days: 1
-          if-no-files-found: error
+      - run: echo "The public repository bundle has already been downloaded; duplicate mining runs are disabled."
