@@ -1,0 +1,99 @@
+name: Correct exact Cayley 555 5+4 search
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/cayley555-correct-d5d4.yml
+  workflow_dispatch:
+
+concurrency:
+  group: cayley555-correct-d5d4
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        pid: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare corrected trajectories and targets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p work results/${{ matrix.pid }}
+          python3 - <<'PY'
+          import json, pathlib, urllib.request
+          root=pathlib.Path('work')
+          data=json.loads(urllib.request.urlopen('https://raw.githubusercontent.com/khoruzhii/cayleypy-cube/main/generators/p003.json').read())
+          actions=data['actions']
+          root.joinpath('moves30.txt').write_text('\n'.join(' '.join(map(str,x)) for x in actions)+'\n')
+          solution=[]
+          for line in pathlib.Path('tmp555/paths35_idx.txt').read_text().splitlines():
+              w=list(map(int,line.split()))
+              solution.append([m+15 if m<15 else m-15 for m in reversed(w)])
+          root.joinpath('paths35_scramble_idx.txt').write_text('\n'.join(' '.join(map(str,w)) for w in solution)+'\n')
+          targets=[]
+          for pid in range(35):
+              text=urllib.request.urlopen(f'https://raw.githubusercontent.com/birdwatcherYT/santa2023/78595af81d185fb1086bb2bdb3935299e0b3d71f/data/{210+pid}.txt').read().decode()
+              target=text.strip().splitlines()[3].split()
+              labels={}
+              vals=[]
+              for x in target:
+                  if x not in labels: labels[x]=len(labels)
+                  vals.append(labels[x])
+              assert len(vals)==150 and len(labels)<=150
+              targets.append(vals)
+          root.joinpath('targets35_idx.txt').write_text('\n'.join(' '.join(map(str,x)) for x in targets)+'\n')
+          assert len(actions)==30 and all(len(x)==150 for x in actions)
+          PY
+          g++ -O3 -march=native -std=c++20 tmp555/exact_d5d4_correct.cpp -o work/exact_d5d4_correct
+      - name: Search every trajectory checkpoint with exact radius 5 plus 4
+        shell: bash
+        run: |
+          set +e
+          /usr/bin/time -v timeout 49m work/exact_d5d4_correct \
+            work/moves30.txt work/paths35_scramble_idx.txt work/targets35_idx.txt \
+            ${{ matrix.pid }} -1 \
+            > results/${{ matrix.pid }}/result.txt \
+            2> results/${{ matrix.pid }}/search.log
+          echo "$?" > results/${{ matrix.pid }}/return_code.txt
+          cat results/${{ matrix.pid }}/result.txt || true
+          tail -30 results/${{ matrix.pid }}/search.log || true
+          exit 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: correct-d5d4-${{ matrix.pid }}
+          path: results/${{ matrix.pid }}
+          retention-days: 1
+          compression-level: 6
+
+  collect:
+    if: always()
+    needs: search
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: correct-d5d4-*
+          path: collected
+          merge-multiple: false
+      - name: Build summary
+        shell: bash
+        run: |
+          find collected -type f -name result.txt -print -exec cat {} \; | tee collected/SUMMARY.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cayley555-correct-d5d4-all
+          path: collected
+          retention-days: 1
+          compression-level: 6
